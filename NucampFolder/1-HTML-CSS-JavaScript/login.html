@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="view port" content="width=device-width, initial-scale=1.0">
+    <title>Styling Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <style>
+        html {
+            background-image: url(wallpaper-website-background.jpg);
+        }
+
+        .body {
+            background-color: transparent;
+        }
+
+        .top-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        }
+
+        .top-container-left {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(176, 203, 212);
+            border: 2px solid rgb(4, 73, 90);
+            border-radius: 25px;
+            transition: transform .3s;
+            text-align-last: center;
+            text-decoration-color: aqua;
+            
+        }
+
+        .top-container-left:hover {
+            transform: scale(1.05);
+        }
+
+        .top-container-right {
+            margin-top: 20px;
+            height: 500px;
+            width: 500px;
+            background-color: rgb(151, 163, 167);
+            border: 2px solid rgb(76, 99, 78);
+            border-radius: 20px;
+            transition: transform .3s;
+            text-align-last: center;
+            text-decoration-color: azure;
+            justify-content: center;
+
+        }
+
+        .top-container-right:hover {
+            transform: scale(1.05);
+        }
+
+        .btn{
+            margin: 30px 10px;
+            border-radius: 25px;
+            background:rgb(117, 152, 172);
+            padding: 5px;
+            width: 200px;
+            height: 50px;
+            border-color: transparent;
+        }
+
+        .fab {
+            font-size: 36px;
+            margin-left: 10px;
+        }
+
+        .fab.fa-facebook-square {
+            color: rgb(9, 33, 170);
+        }
+
+        .fab.fa-facebook-messenger 
+            color: rgb(25, 7, 136);
+        }
+
+        .fab.fa-google-plus-g {
+            color: rgb(31, 44, 31);
+            
+        }
+
+        .fab.fa-instagram {
+            color: rgb(44, 32, 78);
+        }
+
+        .social-icon-button {
+            background-color: transparent;
+            border-color: transparent;
+
+        }
+        
+        .info-field {
+            margin-left: 5px;
+            padding: 2px;
+
+            height: 30px;
+            width: 300px;
+            border-radius: 20px;
+            background-color: rgb(132, 171, 216);
+            
+            
+        } 
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="top-container">
+        <div class="top-container-left">
+            <h1>Welcome Back!</h1>
+            <p><i>To keep connected with us please login with your personal info</i></p>
+
+            <div>
+                <button class="btn">SIGN IN</button>
+             </div>
+           <!--  <div>
+                <i class='far fa-comment-alt'></i>
+                <i class='fas fa-heart'></i>
+                <i class='fas fa-bell'></i>
+            </div> -->
+        </div>
+
+
+        <div class="top-container-right">
+        <h1>Create Account</h1>
+        <div class="social-media">
+            <button onclick="location.href='http://www.fb.com'" type="button" class="social-icon-button"><i
+                    class='fab fa-facebook-square'></i></button>
+            <button class="social-icon-button" onclick="window.open('http://www.fb.com');" type="button"><i
+                    class='fab fa-facebook-messenger'></i></button>
+            <button class="social-icon-button" onclick="window.open('http://www.google.com');" type="button"><i
+                    class='fab fa-google-plus-g'></i></button>
+            <button class="social-icon-button" onclick="location.href='http://www.instgram.com'" type="button"><i
+                    class='fab fa-instagram'></i></button>
+        </div>
+        <p><i> or use your emailfor registration: </i></p>
+        <div class="info-field-container">
+            <i class='fas fa-portrait'></i>
+            <input type="text" placeholder="Name" class="info-field">
+            </div>
+        <div class="info-field-container">
+            <i class="fas fa-envelope-square"></i>
+            <input type="text" placeholder="Email" class="info-field "required=""><br>
+        </div>
+        <div class="info-field-container">
+            <i class='far fa-eye'></i>
+             <input type="password" placeholder="password" class="info-field"><br>
+         </div>
+         <div>
+            <button class="btn">SIGN UP</button>
+            </div>
+
+</div>
+</body>
+
+
+</html>

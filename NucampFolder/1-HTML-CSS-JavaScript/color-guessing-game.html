@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Color Guessing Game</title>
+    <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        button {
+            color: white;
+            background-color: palevioletred;
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Color Guessing Game </h1>
+    <div><button type="button" onclick="runGame()">Start Game</button></div>
+    <script>
+        const COLORS_ARRAY = ['blue', 'cyan', 'gold', 'gray', 'green', 'magenta', 'orange', 'red', 'white', 'yellow'];
+
+        function runGame() {
+            let guess = " ";
+            let correct = false;
+            const targetIndex = Math.floor(Math.random() * COLORS_ARRAY.length);
+            const target = COLORS_ARRAY[targetIndex];
+
+            console.log('target color', target);
+            var attemptCount = 0;
+            do {
+                attemptCount++
+                guess = prompt('I am thinking of one of these colors:\n\n' + COLORS_ARRAY.join(', ') + 'What color am I thinking of?\n')
+                if (guess === null) {
+                    console.log('invalid guess ');
+                    return;
+                }
+                correct = checkGuess(guess.toLowerCase(), target.toLowerCase(), attemptCount)
+
+            } while (correct === false)
+            document.body.style.background = guess;
+            alert('Congratulations! You guessed the right colour! Attempt count is ' + attemptCount)
+        }
+        function checkGuess(guess, target, attemptCount) {
+            let correct = false;
+            console.log(guess);
+            if (!COLORS_ARRAY.includes(guess)) {
+                alert('Invalid entry! Attempt count is ' + attemptCount);
+            } else if (guess > target) {
+                alert('Your guess is too high! Attempt count is ' + attemptCount);
+            } else if (guess < target) {
+                alert('Your guess is too low! Attempt count is ' + attemptCount);
+            } else {
+                correct = true;
+            }
+            return correct;
+        }
+    </script>
+</body>
+
+</html>

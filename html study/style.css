@@ -1,0 +1,55 @@
+/*Selector{
+	Property: value; 
+}*/
+
+body{
+	background-image: url(image919.jpg); 
+	background-size:cover;
+
+}
+
+
+ p {
+	color: red;
+	text-align:center;
+	border: 5px solid rgba(255, 176, 170,0.5);
+	cursor: pointer;  
+}
+p {
+
+	color: blue
+	background color: red
+	
+}
+
+p{
+	
+	line-height: 20px
+	font style:italic;
+	font-weight: bold;
+	font-size: 150%
+}
+img{
+	float: left;
+}
+footer{
+	clear: both;
+	text-align: center;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+}
+.webtext {
+	border: 5px dashed white;
+}
+
+.ative{
+	color: red
+}
+
+#div1{
+	background: rgba(0 ,0 ,255, 0.2);
+}
+

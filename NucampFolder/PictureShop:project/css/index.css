@@ -1,0 +1,83 @@
+
+/*body { 
+    width: 50%;
+    height: 50%;
+    font-family: sans-serif;
+    background: url(/Users/ankurpandey/Desktop/PictureShop/css/images/images/header-1.jpeg) no-repeat center center fixed; 
+    /*-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:;
+    background-size:auto;
+  }
+
+  .header {
+    display: block;
+    padding: 40px;
+    background-size: cover;
+    text-align: center;
+    background: blue;
+    color: white;
+    font-size: 100px;
+  }
+  .footer{
+    display: block;
+      background-color:blue;
+      padding: 10px;
+    */
+  html, body {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  }
+  
+  body { }
+  
+  header {
+      height: 75px;
+      background-color:rgb(46, 5, 5);
+  }
+  
+  main {
+    width: auto;
+    height: 800px;
+    background: url(/Users/ankurpandey/Desktop/PictureShop/css/images/images/header-1.jpeg) no-repeat; 
+    background-size: 100% 100%;;
+    font-family: sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction:column;
+  }
+  
+
+  main_title {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(53, 9, 9);
+  }
+
+  .sign-in-btn{
+    /* margin-top: 200px; */
+    border-radius: 25px;
+    background-color: rgb(83, 81, 81);
+    color: white;
+    padding: 5px;
+    width: 200px;
+    height: 50px;
+  }
+  .social-media-btn.footer{
+    size:90px ;
+    float: right;
+  }
+  
+  footer {
+      height: 45px;
+      background-color: rgb(97, 93, 93);
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction:row;  
+  }
+  

@@ -1,0 +1,16 @@
+body {
+    font-family: 'Sans Source Pro', sans-serif; 
+  }
+  
+  table {
+      margin: auto;
+  }
+  
+  th {
+      background: lightblue;
+  }
+  
+  td {
+      background: khaki;
+      text-align: center;
+  }
